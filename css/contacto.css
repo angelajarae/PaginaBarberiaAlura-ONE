@@ -1,0 +1,66 @@
+form{
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+}
+form>label,legend{
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+form >label:not(form>label:first-child),fieldset{
+    margin-top: 2%;
+}
+form>input,select{
+    padding: 1%;
+}
+
+
+fieldset{
+    
+    display:flex;
+    flex-direction: column;
+}
+
+
+table{
+    width: 50%;
+    margin-top: 1%;
+    
+}
+th{
+    background-color: darkgrey;
+    border:1px solid black;
+}
+td{
+    border:1px solid black;
+}
+
+
+button{
+    margin-top: 8%;
+    width: 30%;
+    padding: 1% 0;
+    font-weight: bold;
+    background-color: brown;
+    border:none;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width:480px) {
+    form{
+        width: 100%;
+    }
+    table{
+        width: 80%;
+    }
+    button{
+        width: 50%;
+    }
+}

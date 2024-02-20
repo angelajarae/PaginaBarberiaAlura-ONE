@@ -1,0 +1,39 @@
+.contenedor-productos{
+    display:flex;
+
+}
+.contenedor-productos li{
+    flex:1;
+    text-align: center;
+}
+.contenedor-producto{
+    padding:3% 0;
+    margin: 0 2%;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+.subtitulo{
+    color:brown;
+}
+
+
+.precio{
+    font-weight: bold;
+}
+
+.contenedor-producto:hover .subtitulo{
+    font-size: 2em;
+}
+.contenedor-producto:hover {
+    border-color: darkgoldenrod;
+}
+
+
+@media screen and (max-width:480px) {
+    .contenedor-productos{
+        flex-direction: column;
+    }
+    .contenedor-producto{
+        margin: 2%;
+    }
+}

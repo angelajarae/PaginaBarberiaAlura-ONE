@@ -1,0 +1,100 @@
+.banner{
+    width: 100%;
+}
+.contenedor-contenido li{
+    margin:1% 0;
+}
+
+
+
+
+.img-utensilios{
+    float:left;
+    width: 8%;
+    margin-right: 1%;
+    transition: 0.5s;
+}
+.img-utensilios:hover{
+    opacity: 0.6;
+    box-shadow: 10px 10px 8px darkgray;
+}
+.mision{
+    font-weight: bold;
+}
+.mision em{
+    font-style: italic;
+    color:darkred;
+}
+
+
+.mapa{
+    width: 100%;
+    height: 300px;
+}
+
+
+.contenedor-diferenciales{
+    display: flex;
+}
+.lista-diferenciales{
+    flex: 1.5;
+    line-height: 1.5;
+}
+.lista-diferenciales li::before{
+    content: "∘ ";
+}
+.lista-diferenciales li:nth-child(1),.lista-diferenciales li:nth-child(4){
+    color:darkgoldenrod;
+    font-weight: bold;
+}
+.img-diferenciales{
+    flex: 1;
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    transition:0.5s;
+    
+}
+.img-diferenciales:hover{
+    opacity: 0.6;
+    box-shadow: 10px 10px 5px darkgray;
+}
+
+
+.video{
+    margin: auto;
+    width: 80%;
+    height: 500px;
+    display:flex;
+}
+.contenedor-contenido.contenedor-video{
+    background:radial-gradient(ellipse,white ,rgb(226, 226, 226) 50%,#CCCCCC,rgb(183, 183, 183),darkgray 75%);
+    
+}
+
+
+@media screen and (max-width:480px){
+    .img-utensilios{
+        width: 30%;
+        margin-right: 2.5%;
+    }
+
+
+    .contenedor-diferenciales{
+        flex-direction: column;
+    }
+    
+    .contenedor-diferenciales ul{
+        margin-bottom: 2%;
+    }
+    .img-diferenciales{
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .video{
+        width: 100%;
+        height: 250px;
+    }
+}
