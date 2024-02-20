@@ -114,7 +114,7 @@ body{
 
 
 footer{
-	background-image: url(/imagenes/bg.jpg);
+	background-image: url(../imagenes/bg.jpg);
 	text-align: center;
 	padding: 2% 0 2% 0;
 	margin-bottom: 2%;
